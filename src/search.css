@@ -1,0 +1,32 @@
+body {
+  background-color: #d4e7f3;
+  opacity: 0.8;
+  background-image: radial-gradient(#094365 0.5px, #d4e7f3 0.5px);
+  background-size: 10px 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: #094365;
+  font-weight: 700;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container input {
+  width: 250px;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: #031926;
+  font-weight: 700;
+}
+
+.app-container p{
+    margin: 10px;
+}
