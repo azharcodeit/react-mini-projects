@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import JSONDATA from "./MOCK_DATA.json";
-import './search.css'
+import JSONDATA from "./data/MOCK_DATA.json";
+import './styles/search.css'
 
 function Search() {
-  let [name, setName] = useState("");
+  const [name, setName] = useState("");
 
   return (
     <div className="app-container">

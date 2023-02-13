@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import './counter.css'
+import './styles/counter.css'
 
 const initialState = {count: 0}
 
@@ -20,7 +20,7 @@ function reducer(state, action){
 }
 
 function Counter() {
-  let [state, dispatch] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="app-container">
       <div className="temperature-display-container" style={{backgroundColor: state.count>15? '#ed682a': '#70b2e3'}}><h2>{state.count} °C</h2></div>

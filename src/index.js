@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import App from './App';
 // import Counter from './Counter';
-import Search from './Search';
+// import Search from './Search';
+import Registration from './Registration';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,7 +11,8 @@ root.render(
   <React.StrictMode>
     {/* <Counter /> */}
     {/* <App/> */}
-    <Search/>
+    {/* <Search/> */}
+    <Registration/>
   </React.StrictMode>
 );
 

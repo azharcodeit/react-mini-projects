@@ -31,8 +31,8 @@ function newTodo(name) {
   return { id: Date.now(), name: name, complete: false };
 }
 function App() {
-  let [todos, dispatch] = useReducer(reducer, []);
-  let [name, setName] = useState('')
+  const [todos, dispatch] = useReducer(reducer, []);
+  const [name, setName] = useState('')
 
   function handleSubmit(e) {
     e.preventDefault(); // page refresh after submit
