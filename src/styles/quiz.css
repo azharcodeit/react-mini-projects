@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(188, 216, 246);
+}
+
+html * {
+    box-sizing: inherit;
+}
+.app-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app-container{
+    width: 500px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    gap: 2rem;
+    background-color:midnightblue;
+    color:gainsboro;
+    border-radius: 16px;
+    min-height: 200px;
+}
+
+.result{
+    grid-template-columns: 1fr;
+}
+
+.question-count span{
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+.question-count{
+    margin-bottom: 2rem;
+}
+
+button{
+    border: 3px solid #99c0efa3;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.answers-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+@media only screen and (max-width: 500px) {
+    .app-container {
+        width: max-content;
+        grid-template-columns: 1fr;
+    }
+}

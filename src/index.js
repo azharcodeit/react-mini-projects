@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 // import App from './App';
 // import Counter from './Counter';
 // import Search from './Search';
-import Registration from './Registration';
+// import Registration from './Registration';
+import Quiz from './Quiz';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,8 @@ root.render(
     {/* <Counter /> */}
     {/* <App/> */}
     {/* <Search/> */}
-    <Registration/>
+    {/* <Registration/> */}
+    <Quiz/>
   </React.StrictMode>
 );
 
