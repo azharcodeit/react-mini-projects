@@ -1,20 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-// import App from './App';
-// import Counter from './Counter';
-// import Search from './Search';
-// import Registration from './Registration';
-import Quiz from './Quiz';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+// import TodoApp from "./feats/TodoApp";
+// import Counter from "./feats/Counter";
+// import Search from "./feats/Search";
+// import Registration from "./feats/Registration";
+import Quiz from "./feats/Quiz";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <Counter /> */}
-    {/* <App/> */}
+    {/* <TodoApp/> */}
     {/* <Search/> */}
     {/* <Registration/> */}
-    <Quiz/>
+    <Quiz />
   </React.StrictMode>
 );
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import "./styles/quiz.css";
-import data from "./data/QUESTIONS_ANSWERS.json";
+import "../styles/quiz.css";
+import data from "../data/QUESTIONS_ANSWERS.json";
 
 function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -10,17 +10,16 @@ function Quiz() {
 
   function handleClick(e) {
     e.preventDefault();
-    if(e.currentTarget.textContent === data[currentQuestion].correct){
-      setScore((prevValue) => prevValue + 1)
+    if (e.currentTarget.textContent === data[currentQuestion].correct) {
+      setScore((prevValue) => prevValue + 1);
     }
     setCurrentQuestion((prevValue) => {
       if (prevValue + 1 < data.length) {
         return prevValue + 1;
       }
-      setShowScore(true)
+      setShowScore(true);
       return prevValue;
     });
-  
   }
 
   return (
@@ -42,7 +41,7 @@ function Quiz() {
             <div className='answers-container'>
               {data[currentQuestion].answers.map((answer, index) => {
                 return (
-                  <button onClick={handleClick} key={index}>
+                  <button className="choice-button" onClick={handleClick} key={index}>
                     {answer}
                   </button>
                 );

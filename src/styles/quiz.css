@@ -40,10 +40,18 @@ html * {
 }
 
 button{
-    border: 3px solid #99c0efa3;
+    border: 3px solid #99c0f0a3;
     padding: 5px;
     border-radius: 10px;
     text-align: left;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.choice-button:hover{
+    box-shadow: inset 0 -3.25em 0 0 #99c0f0a3;
 }
 
 .answers-container{

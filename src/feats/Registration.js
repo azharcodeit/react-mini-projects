@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./styles/registration.css";
+import "../styles/registration.css";
 
 function Registration() {
   const [values, setValues] = useState({
@@ -17,30 +17,30 @@ function Registration() {
     setValues({ name: "", lastName: "", email: "" });
   }
   return (
-    <div className="app-container">
-      <form className="form-container" onSubmit={handleSubmit}>
+    <div className='app-container'>
+      <form className='form-container' onSubmit={handleSubmit}>
         <input
-          type="text"
+          type='text'
           value={values.name}
-          placeholder="Name"
+          placeholder='Name'
           onChange={(e) => setValues({ ...values, name: e.target.value })}
           required
         />
         <input
-          type="text"
+          type='text'
           value={values.lastName}
-          placeholder="Last Name"
+          placeholder='Last Name'
           onChange={(e) => setValues({ ...values, lastName: e.target.value })}
           required
         />
         <input
-          type="text"
+          type='text'
           value={values.email}
-          placeholder="Email"
+          placeholder='Email'
           onChange={(e) => setValues({ ...values, email: e.target.value })}
           required
         />
-        <input type="submit" value="Register" className="register" />
+        <input type='submit' value='Register' className='register' />
       </form>
     </div>
   );

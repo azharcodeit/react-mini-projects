@@ -1,16 +1,16 @@
 import React from "react";
 import { useState } from "react";
-import JSONDATA from "./data/MOCK_DATA.json";
-import './styles/search.css'
+import JSONDATA from "../data/MOCK_DATA.json";
+import "../styles/search.css";
 
 function Search() {
   const [name, setName] = useState("");
 
   return (
-    <div className="app-container">
+    <div className='app-container'>
       <input
-        type="text"
-        placeholder="Search..."
+        type='text'
+        placeholder='Search...'
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
